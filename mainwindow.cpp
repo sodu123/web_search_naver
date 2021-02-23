@@ -59,7 +59,7 @@ void MainWindow::handleFinished(QNetworkReply *reply){
         {
            QJsonObject json = arr[i].toObject();
            QString d = json.value("pubDate").toString();
-           QString t = json.value("title").toString().toLocal8Bit();
+           QString t = json.value("title").toString();
            QString l = json.value("link").toString();
            ui->tableWidget->insertRow(ui->tableWidget->rowCount());
            ui->tableWidget->setItem(ui->tableWidget->rowCount()-1,0,new QTableWidgetItem(d)); //when passed in a constructor, does it delete automatically?
