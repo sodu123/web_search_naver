@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/new/prefix1"/>
+    <qresource prefix="/">
+        <file>20201108_190700.jpg</file>
+    </qresource>
+    <qresource prefix="/hoBBang"/>
+</RCC>
